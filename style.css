@@ -21,32 +21,34 @@ body {
     position: relative;
 }
 .wallpaper {
-    width: 100%;
-    margin: 0px;
+    width: auto;
+    margin: 0;
     position: relative;
     background-color: #7882A4;
-}
-.wallpaper img{
-    align-items: center;
 }
 .logo{
     font-size: 20px;
 }
-.logo a {
+.logo img {
+    float: left;
+    margin-top: 20px;
+}
+.namalogo {
+    margin-left: 10px;
     font-weight: 800;
     float: left;
     font-family: courier;
     color: black;
 }
-
 .menu {
+    margin-top: 20px;
     float: right;
 }
 nav {
     width: 100%;
     margin: auto;
     display: flex;
-    line-height: 80px;
+    line-height: 50px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -55,7 +57,6 @@ nav {
     z-index: 1;
     border: 1px solid #364f6b;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -66,16 +67,69 @@ nav ul li {
     float: left;
 }
 nav ul li a{
+    display: block;
     color: black;
     font-weight: bold;
     text-align: center;
+    font-size: 16px;
     padding: 0px 16px 0px 16px;
     text-decoration: none;
 }
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul ul li a {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.menu li i {
+    font-size: 13px
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #E23E57;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    
+}
+.dropdown li {
+    /* height: 30px; */
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.dropdown a {
+    text-align: left;
+    padding-left: 10px ;
+}
+nav ul li:hover > .dropdown {
+    display: block;
+    background-color: #1C658C;
+    padding: 0%;
+}
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.dropdown-1 li{
+    display: none;
+}
+/* .dropdown-1:hover >  .aaa{
+    display: block;
+    background-color: #1C658C;
+    padding: 0%;
+} */
+.dropdown .dropdown li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+    }
+/* li > a::after {content: '↓';} */
+/* li > a:only-child::after {
+    content: '↓';} */
 section {
     margin: auto;
     display: flex;
@@ -95,7 +149,7 @@ section {
 }
 h2 {
     font-family: 'comic sans ms';
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -111,23 +165,24 @@ p {
 }
 .listberita {
     text-align: center;
-    width: 70%;
-    position: relative;
+    width: 50%;
+    position:relative ;
     display: flex;
     flex-wrap: wrap;
 }
 .gambar-berita {
     width: 50%;
-    margin: 40px 0px 40px 0px;
+    margin: 10px 0px 10px 0px;
     margin-left: auto;
     margin-right: auto;
 }
 .gambar-berita img {
     width: 50%;
-    border-radius: 30%;
+    border-radius: 10%;
 }
 .gambar {
-    width: 70%;
+    margin-top: 15px;
+    width: 50%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +197,7 @@ p {
     display: block;
     width: 100%;
     border: 10px;
+    margin-bottom: 20px;
 }
 #bidang {
     padding: 30px 5px 40px 5px;
@@ -164,7 +220,7 @@ h3 {
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: darkblue;
+    color: bisque;
     width: 100%;
     line-height: 50px;
 }
@@ -182,42 +238,14 @@ h3 {
 .footer-section {
     width: 30%;
     margin: 0 auto;
+    font-size: 18px;
 }
 h4 {
     font-family: 'comic sans ms';
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: bisque;
     width: 100%;
     line-height: 40px;
-}
-.mainmenubtn {
-    background-color: #1C658C;
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding:10px;
-    margin-top:5px;
-}
-.mainmenubtn:hover {
-    background-color: skyblue;
-    }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    background-color: skyblue;
-    min-width: 25px;
-}
-.dropdown-child a {
-    color: blue;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
 }
