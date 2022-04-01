@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# Struktur Organisasi
+--------------------------------------------------------------*/
+p {
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
+# Struktur Organisasi
+--------------------------------------------------------------*/
+.struktur-kesbang img {
+  border: 5px solid black;
+}
+
+/*--------------------------------------------------------------
+# Visi Misi
+--------------------------------------------------------------*/
+a:hover {
+  color: #e24d55;
+  text-decoration: none;
+}
+
+.visimisi p {
+  font-size: 20 px;
+  font-weight: 450;
+}
+#visimisi .visimisi p i {
+  font-weight: bold;
+  font-size: 100px;
+}
+.visimisi ol {
+  font-weight: 450;
+  padding: 0;
+
+  margin-left: 20px;
+}
+.visimisi ol li {
+  text-align: justify;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+/*--------------------------------------------------------------
+# Bidang & Sekretariat
+--------------------------------------------------------------*/
+.bidang ul li,
+.bidang ol li {
+  font-size: 20px;
+}
+.bidang h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
